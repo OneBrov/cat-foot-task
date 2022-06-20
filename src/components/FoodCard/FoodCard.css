@@ -1,0 +1,135 @@
+.cardWithDescription {
+    width: 320px;
+}
+
+.card {
+    clip-path: polygon(43px 0, 100% 0, 100% 100%, 0 100%, 0 43px);
+
+    cursor: pointer;
+
+    width: 320px;
+    height: 480px;
+
+    border-radius: 12px;
+    --borderWidth: 4px;
+}
+
+.outside {
+    position: relative;
+    border-radius: 12px;
+    clip-path: polygon(43px 0, 100% 0, 100% 100%, 0 100%, 0 43px);
+}
+
+.yellowText {
+    color: #FFFF66;
+}
+
+.default {
+    background-color: #1698D9;
+}
+
+.outside:hover.default  {
+    background-color: #2EA8E6;
+}
+
+.selected {
+    background-color: #D91667;
+}
+
+.outside:hover.selected  {
+    background-color: #E52E7A;
+}
+
+.disabled {
+    background-color: #B3B3B3;
+    cursor: auto;
+}
+
+.translucent * {
+    color: #B3B3B3;;
+}
+
+.translucent {
+    opacity: 0.5;
+}
+
+
+.inside {
+    position: absolute;
+
+    box-sizing: border-box;
+
+    top: var(--borderWidth);
+    left: var(--borderWidth);
+
+    width: calc(320px - 2 * var(--borderWidth));
+    height: calc(480px - 2 * var(--borderWidth));
+
+    padding: 21px 16px;
+    padding-left: 41px;
+
+    border-radius: 8px;
+    clip-path: polygon(41px 0, 100% 0, 100% 100%, 0 100%, 0 41px);
+
+    background: url("../../assets/Cat.png") #f2f2f2 -24px bottom no-repeat;
+    background-position-y: 208px;
+}
+
+.inside ul {
+    margin: 0;
+    margin-left: 3px;
+    padding: 0;
+    list-style: none;
+
+    font-size: 14px;
+    line-height: 114%;
+    color: #666;
+}
+ 
+.brand {
+    margin-top: 5px;
+    margin-bottom: 0px;
+    
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 56px;
+    height: 56px;
+}
+
+.taste {
+    margin: 0;
+    margin-left: 3px;
+    margin-bottom: 19px;
+    
+}
+
+.description {
+    margin: 0;
+    margin-left: 3px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    height: 19px;
+    line-height: 19px;
+}
+
+.description {
+    color: #666;
+}
+
+.description.hoveredAndSelected {
+    color: #E62E7A;
+}
+
+.blueDot {
+    color: #1698D9;
+}
+
+.underCardText {
+    color: #fff;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+    text-align: center;
+}

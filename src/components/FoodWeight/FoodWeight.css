@@ -1,0 +1,33 @@
+.foodWeightContainer {
+    position: absolute;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    text-align: center;
+
+    right: 16px;
+    bottom: 16px;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+
+    background-color: inherit;
+
+    color: white;
+    
+}
+
+.weightNumber {
+    font-size: 42px;
+    line-height: 42px;
+    font-weight: 400;
+}
+
+.weightUnit {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: normal;
+    font-size: 1.5em;
+    line-height: 15px;
+}
